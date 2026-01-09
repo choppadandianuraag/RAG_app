@@ -1,0 +1,65 @@
+/Users/anuraag/Python/RAG App/Backend/main.py:93: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+/Users/anuraag/Python/RAG App/Backend/main.py:108: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("shutdown")
+INFO:     Will watch for changes in these directories: ['/Users/anuraag/Python/RAG App/Backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [25480] using WatchFiles
+🚀 Starting TechGear Customer Support API...
+📝 API Documentation: http://localhost:8000/docs
+🔍 Health Check: http://localhost:8000/health
+INFO:     Started server process [25541]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+🚀 Starting up FastAPI server...
+📚 Loading RAG engine...
+  🔧 Initializing RAG Engine components...
+  📄 Loading documents from: /Users/anuraag/Python/RAG App/FAQ Data.pdf
+    ✓ Loaded 1 pages, split into 2 chunks
+  🎯 Loading embeddings: BAAI/bge-large-en-v1.5
+  💾 Creating vector store...
+    ✓ Vector store created with 2 documents
+  🔀 Initializing reranker...
+Loading cross-encoder model: cross-encoder/ms-marco-MiniLM-L-6-v2
+✓ Model loaded successfully!
+  🤖 Initializing LLM: llama-3.1-8b-instant
+  ⛓️ Building RAG chain...
+  ✅ RAG Engine initialized successfully!
+✅ RAG engine loaded successfully!
+INFO:     127.0.0.1:56658 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56664 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56664 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56666 - "GET /chat HTTP/1.1" 405 Method Not Allowed
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO:     127.0.0.1:56680 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56683 - "GET /chat HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:56683 - "GET /chat HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:56687 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56687 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56722 - "OPTIONS /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56722 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56808 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56871 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56896 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56950 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56982 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56990 - "POST /chat HTTP/1.1" 200 OK
+/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
