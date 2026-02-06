@@ -33,7 +33,7 @@ export default function App() {
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 second timeout
 
-      const res = await fetch("http://localhost:8000/chat", {
+      const res = await fetch("https://anuraagllm-rag-app.hf.space/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
